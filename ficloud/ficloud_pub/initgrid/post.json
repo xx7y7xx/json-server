@@ -1,0 +1,103 @@
+{
+  "success": true,
+  "message": "",
+  "data": [
+    {
+      "id": "id",
+      "lable": "主键",
+      "datatype": 0,
+      "length": 40,
+      "digit": 0,
+      "refinfo": null,
+      "refinfocode": null,
+      "enumdata": null,
+      "hidden": false,
+      "defaultvalue": null
+    },
+    {
+      "id": "code",
+      "lable": "编码",
+      "datatype": 0,
+      "length": 50,
+      "digit": 0,
+      "refinfo": null,
+      "refinfocode": null,
+      "enumdata": null,
+      "hidden": false,
+      "defaultvalue": null
+    },
+    {
+      "id": "name",
+      "lable": "名称",
+      "datatype": 0,
+      "length": 100,
+      "digit": 0,
+      "refinfo": null,
+      "refinfocode": null,
+      "enumdata": null,
+      "hidden": false,
+      "defaultvalue": null
+    },
+    {
+      "id": "pk_org",
+      "lable": "组织",
+      "datatype": 5,
+      "length": 40,
+      "digit": 0,
+      "refinfo": "G001ZM0000BASEDOCORG0000000000000000",
+      "refinfocode": "org",
+      "enumdata": null,
+      "hidden": false,
+      "defaultvalue": "G001ZM0000BASEDOCDEFAULTORG000000000"
+    },
+    {
+      "id": "classifyid",
+      "lable": "项目类型",
+      "datatype": 5,
+      "length": 40,
+      "digit": 0,
+      "refinfo": "G001ZM0000BASEDOCPROJECTCLASS0000000",
+      "refinfocode": "projectclass",
+      "enumdata": null,
+      "hidden": false,
+      "defaultvalue": null
+    },
+    {
+      "id": "person",
+      "lable": "项目主管",
+      "datatype": 5,
+      "length": 40,
+      "digit": 0,
+      "refinfo": "G001ZM0000BASEDOCUSER000000000000000",
+      "refinfocode": "user",
+      "enumdata": null,
+      "hidden": false,
+      "defaultvalue": null
+    },
+    {
+      "id": "enable",
+      "lable": "启用",
+      "datatype": 4,
+      "length": 10,
+      "digit": 0,
+      "refinfo": null,
+      "refinfocode": null,
+      "enumdata": null,
+      "hidden": false,
+      "defaultvalue": "true"
+    },
+    {
+      "id": "description",
+      "lable": "备注",
+      "datatype": 0,
+      "length": 400,
+      "digit": 0,
+      "refinfo": null,
+      "refinfocode": null,
+      "enumdata": null,
+      "hidden": false,
+      "defaultvalue": null
+    }
+  ],
+  "code": 1
+}
