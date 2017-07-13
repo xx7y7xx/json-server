@@ -1,0 +1,40 @@
+{
+  "success": true,
+  "message": "",
+  "data": {
+    "metaDefinedName": "ProjectVO",
+    "namespace": "com.yonyou.iuap.bd.entity.project.ProjectVO",
+    "status": 0,
+    "changedPropertyNames": null,
+    "id": "8025b86204484ce4b6d09291608b958f",
+    "code": "aaa",
+    "name": "bbb",
+    "parentid": null,
+    "innercode": null,
+    "creator": null,
+    "creationtime": "2017-07-13 15:09:24",
+    "modifier": null,
+    "modifiedtime": "2017-07-13 15:09:24",
+    "tenantid": "ysdzxt76",
+    "sysid": null,
+    "enable": true,
+    "ts": "2017-07-13 15:09:24",
+    "dr": 0,
+    "pk_org": null,
+    "pk_group": null,
+    "classifyid": {
+      "id": "d9f8475d702441e498557045ccc10a3c",
+      "code": "0001",
+      "name": "项目分类1"
+    },
+    "name2": null,
+    "name3": null,
+    "name4": null,
+    "name5": null,
+    "name6": null,
+    "description": null,
+    "person": null,
+    "personmobile": null
+  },
+  "code": 1
+}
