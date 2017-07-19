@@ -4,7 +4,8 @@
   "description": "JSON server",
   "main": "index.js",
   "scripts": {
-    "dev": "node app.js",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "NODE_ENV=test mocha test.js",
     "tdd": "NODE_ENV=test mocha --watch --growl test.js",
     "lint": "eslint"
@@ -35,6 +36,7 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "mocha": "^3.4.2",
+    "nodemon": "^1.11.0",
     "supertest": "^3.0.0"
   }
 }
