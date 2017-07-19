@@ -1,0 +1,39 @@
+{
+  "name": "json-server",
+  "version": "0.1.0",
+  "description": "JSON server",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node app.js",
+    "test": "NODE_ENV=test mocha test.js",
+    "lint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xxd3vin/json-server.git"
+  },
+  "keywords": [
+    "json",
+    "node.js",
+    "koa"
+  ],
+  "author": "Devin Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xxd3vin/json-server/issues"
+  },
+  "homepage": "https://github.com/xxd3vin/json-server#readme",
+  "dependencies": {
+    "koa": "^2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.2.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^3.4.2",
+    "supertest": "^3.0.0"
+  }
+}
