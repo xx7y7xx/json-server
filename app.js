@@ -1,6 +1,7 @@
 const Koa = require('koa');
 const router = require('koa-router')();
 const koaBody = require('koa-body');
+const json = require('koa-json');
 // const app = new Koa();
 const app = module.exports = new Koa();
 
@@ -10,7 +11,10 @@ const posts = [];
 
 // middlewares
 
+// A body parser middleware, support multipart, urlencoded and json request bodies
 app.use(koaBody());
+// JSON pretty-printed response middleware
+app.use(json());
 
 // x-response-time
 
@@ -53,7 +57,7 @@ async function create(ctx) {
   post.created_at = new Date();
   post.id = id;
   // ctx.redirect('/');
-  ctx.body = JSON.stringify(post);
+  ctx.body = post;
 }
 
 app.use(router.routes());
