@@ -1,5 +1,5 @@
 var app = require('./app');
-var request = require('supertest').agent(app.listen(3333));
+var request = require('supertest').agent(app.listen());
 
 describe('Hello World', function() {
   it('should say "Hello World"', function(done) {
