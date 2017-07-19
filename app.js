@@ -32,7 +32,11 @@ app.use(async function(ctx, next) {
 
 // response
 
-app.use(ctx => {
+// app.use(ctx => {
+//   ctx.body = 'Hello World';
+// });
+
+router.get('/', ctx => {
   ctx.body = 'Hello World';
 });
 
@@ -48,7 +52,8 @@ async function create(ctx) {
   console.log(111, posts.length);
   post.created_at = new Date();
   post.id = id;
-  ctx.redirect('/');
+  // ctx.redirect('/');
+  ctx.body = JSON.stringify(post);
 }
 
 app.use(router.routes());
