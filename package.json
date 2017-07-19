@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node app.js",
     "test": "NODE_ENV=test mocha test.js",
-    "tdd": "NODE_ENV=test mocha --watch test.js",
+    "tdd": "NODE_ENV=test mocha --watch --growl test.js",
     "lint": "eslint"
   },
   "repository": {
