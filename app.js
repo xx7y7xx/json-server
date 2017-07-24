@@ -2,12 +2,10 @@ const Koa = require('koa');
 const router = require('koa-router')();
 const koaBody = require('koa-body');
 const json = require('koa-json');
+// const debug = require('debug')('json-server');
+const low = require('lowdb');
 // const app = new Koa();
 const app = module.exports = new Koa();
-
-// "database"
-
-const posts = [];
 
 // middlewares
 
@@ -36,28 +34,29 @@ app.use(async function(ctx, next) {
 
 // response
 
-// app.use(ctx => {
-//   ctx.body = 'Hello World';
-// });
-
 router.get('/', ctx => {
-  ctx.body = 'Hello World';
+  ctx.body = 'json-server';
 });
 
-router.post('/post', create);
-
-/**
- * Create a post.
- */
+router.post('/ficloud/project/query', create);
 
 async function create(ctx) {
-  const post = ctx.request.body;
-  const id = posts.push(post) - 1;
-  console.log(111, posts.length);
-  post.created_at = new Date();
-  post.id = id;
-  // ctx.redirect('/');
-  ctx.body = post;
+  const db = low(`./ficloud/project/query/post.json`);
+
+  const resObj = {
+    __fake_server__: true
+  };
+
+  // 为啥isEmpty返回的是Boolean对象?
+  if (!db.isEmpty().valueOf()) {
+    let body = db.value();
+    // debug('body: %s', JSON.stringify(body));
+    Object.assign(resObj, body);
+  } else {
+    resObj.success = false;
+    resObj.message = '对应路径的JSON文件不存在！';
+  }
+  ctx.body = resObj;
 }
 
 app.use(router.routes());
